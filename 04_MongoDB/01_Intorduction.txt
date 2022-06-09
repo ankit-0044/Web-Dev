@@ -1,6 +1,6 @@
 SIMPLE INTRODUCTION OF MONGODB FOR MY REFERENCE
 
-After successfully installing mongoDB, add its path to environment variable fro terminal use.
+After successfully installing mongoDB, add its path to environment variable for terminal use.
 
 START MONGOD:
     --> mongod is a mngodb's server process
