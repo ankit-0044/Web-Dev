@@ -1,0 +1,9 @@
+
+
+@media (max-width: 1018px){
+	.mainContainer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

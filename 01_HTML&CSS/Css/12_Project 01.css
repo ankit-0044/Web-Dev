@@ -1,0 +1,110 @@
+body{
+	/*CSS Reset*/
+	margin: 0px;
+	padding: 0px;
+	background: url('file:/home/ankit/Desktop/Project/WebDev/Image and Logo/gym.jpg');
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+
+
+.left{
+	display: inline-block;
+	/*border: 2px solid red;*/
+	position: absolute;
+	left: 50px;
+	top: 6px;
+}
+
+.left img{
+	width: 80px;
+	filter: invert(100%);
+}
+
+.left div{
+	position: relative;
+    top: -16px;
+    left: 2px;
+	color: white;
+	text-align: center;
+}
+
+.mid{
+	display: block;
+	width: 36%;
+	margin: 20px auto;
+	/*border: 2px solid blue;	*/
+}
+
+.right{
+	position: absolute;
+	right: 34px;
+	top: 31px;
+	display: inline-block;
+	/*border: 2px solid yellow;*/
+}
+
+.navbar{
+	display: inline-block;
+}
+
+.navbar li {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.navbar li a{
+	color: white;
+	text-decoration: none;
+	padding: 34px 25px;
+}
+
+.navbar li a:hover, .navbar li a.active{
+	text-decoration: underline;
+	color: yellow;
+}
+
+.btn{
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0px 10px;
+	background-color: black;
+	color: white;
+	padding: 3px 15px;
+	border: 2px solid grey;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+
+}
+
+.btn:hover{
+	background-color: gray ;
+}
+
+.container{
+	border: 2px solid white;
+	margin: 191px 1041px;
+	padding: 75px;
+	width: 33%;
+	border-radius: 28px;
+}
+.container h1{
+	text-align: center;
+}
+.container button{
+	display: block;
+	width: 87%;
+	margin: auto;
+}
+
+.form-group input{
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	display: block;
+	width: 86%;
+	border: 2px solid black;
+	border-radius: 8px;
+	margin: 11px auto;
+	padding: 2px;
+}

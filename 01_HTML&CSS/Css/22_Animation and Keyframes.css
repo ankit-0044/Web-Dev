@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+.container{
+	background-color: greenyellow;
+}
+
+.box{
+	background-color: cyan;
+	width: 250px;
+	height: 250px;
+	position: relative;
+
+	/*Creating animation and its properties*/
+	/*animation-name: Python;*/
+	animation-name: Python2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: alternate;
+	animation-timing-function: ease-in;
+
+	animation-delay: 4s;
+	animation-direction: reverse;
+
+}
+
+@keyframes Python{
+	from{
+		width: 200px;
+	}
+	to{
+		width: 1400px;
+
+	}
+}
+
+@keyframes Python2{
+	0%{
+		top: 0px;
+		left: 0px;
+	}
+	25%{
+		top: 250px;
+		left: 0px;
+	}
+	75%{
+		top: 250px;
+		left: 250px;
+
+	}
+	100%{
+		top: 0px;
+		left: 250px;
+
+	}
+}

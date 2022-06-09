@@ -1,0 +1,33 @@
+View Database:
+    --> 'show databases' query is used to view all available database.
+
+View collection:
+    --> collection is like a table in database but in mongodb
+        it not not exactly a table it is called a collection.
+    --> 'show collections' query is used used to view collection.
+
+Create Database:
+    --> 'use <database_name>' query is used to create or change
+        between the database.
+        Example: 'use demo' if demo database is already available then this query switch the current
+        database to demo, if not then it will create 'demo' database.
+
+insertOne({})
+    --> this query is used to insert single row item or collection.
+        Example: db.phone.insertOne({name:"Samsung", price:12000,rating:4.5})
+
+        Explanation: above query tell the demo(current) database to insert the single row of data which we specified inside the 'phone' collection.
+
+insertMany({})
+    --> this query is used to insert multiple row item or collection inside the database
+        Example: db.phone.insertMany([{name:"Samsung 30s",price:22000,rating:4.5,
+        qty:233,sold:98}, {name:"Moto 30s",price:29000,rating:3.5,qty:133,
+        sold:598}, {name:"Realme 80s",price:129000,rating:2.5,qty:633,
+        sold:98,isBig:true}])
+
+        Explanation: above query tell the demo(current) database to insert the multiple row of data which we specified inside the 'phone' collection.
+
+View Data inside collection: find()
+    --> 'db.<collection_name>.find()' is used to view the data inside collection.
+        Example: db.phone.fin()
+                 This is will print all the data inside the collection. 

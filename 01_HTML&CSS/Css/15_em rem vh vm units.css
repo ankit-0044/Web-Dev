@@ -1,0 +1,39 @@
+html{
+	font-size: 20px;
+}
+.container{
+	font-size: 10px;
+	border: 2px solid green;
+
+	/*vh unit : viewport height */
+	height: 100vh;
+
+	/*vw unit: viewport width*/
+	width: 100vw;
+}
+
+h1{
+	text-align: center;
+}
+
+#first{
+	/*em unit parent dependent*/
+
+	/*multipication of parent size.. eg. 10px*4em = 40px*/
+	/*font-size: 4em;*/
+
+	/*multipiication of the current font-size.. eg. 40px*3em = 120px*/
+	/*padding: 3em;*/
+}
+
+#second {
+	/*rem unit body dependent*/
+
+	/*multiplication of html body font-size*/
+	/*font-size: 4rem;*/
+
+	/*multipication of html body font-size*/
+	/*padding: 3rem;*/
+
+}
+

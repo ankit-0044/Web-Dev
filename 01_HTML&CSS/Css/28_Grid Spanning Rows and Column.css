@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    grid-template-rows: repeat(4,1fr);
+    /* grid-column-gap: 5rem; */
+    /* grid-row-gap: 1rem; */
+    grid-gap: 2rem;
+}
+
+.item{
+    background: aqua;
+    border: 2px solid black;
+    padding: 23px;
+}
+
+.item:first-child{
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+}

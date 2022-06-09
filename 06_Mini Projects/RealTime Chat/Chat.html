@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTime Chat</title>
+    
+    <!-- TITLE ICON -->
+    <link rel="icon" type="image/x-icon" href="./chat.png">
+    
+    <!-- SCRIPTS -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>  <!--defer: means script load in background-->
+    <script defer src="./Chat.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Chat.css">
+</head>
+<body>
+    <nav>
+        <img src="./chat.png" alt="Logo" class="logo">
+        <h1>Welcome To Anupma App</h1>
+    </nav>
+    <div class="container">
+        <!-- MESSAGE CONTAINER -->
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Write your message here...">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Website</title>
+    <script src="https://kit.fontawesome.com/d9ada51ac3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+html{
+    scroll-behavior: smooth;
+}
+        body {
+            background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 13px 16px;
+            cursor: pointer;
+
+        }
+
+        .logo_img {
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            padding: 8px;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 70%;
+        }
+
+        .nav-list li {
+            list-style: none;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            font-weight: 400;
+            color: white;
+            cursor: pointer;
+            font-size: 25px;
+
+        }
+
+        .nav-list li a:hover {
+            text-shadow: 2px 2px 10px white;
+            color: lightskyblue;
+
+
+        }
+
+        .rightnav {
+            width: 30%;
+            text-align: right;
+            padding-right: 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 15px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.7) url('https://source.unsplash.com/1920x1080/?school,university,college,study,dark background');
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .firstSection {
+            height: 100vh;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            max-width: 80%;
+            margin: auto;
+            height: 75%;
+        }
+
+        .firsthalf {
+            width: 82%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 16px;
+        }
+
+        .text-big {
+            font-size: 41px;
+            color: white;
+        }
+
+        .text-small {
+            font-size: 18px;
+            line-height: 1.5em;
+            color: white;
+        }
+
+        .secondhalf {
+            width: 30%;
+        }
+
+        .secondhalf img {
+            width: 250px;
+            border: 4px solid white;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+
+        .btn {
+            margin-left: 10px;
+            padding: 3px 10px;
+            min-width: 10%;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+            vertical-align: middle;
+        }
+
+        .btn:hover {
+            border: none;
+            font-size: 15px;
+            transition: 300ms ease;
+            color: transparent;
+            background: none;
+            background-image: url(../img/search.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            filter: invert();
+        }
+
+        .button {
+            align-items: center;
+            background: none;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: rgb(249 249 249) 0 15px 30px -5px;
+            color: #FFFFFF;
+            line-height: 1em;
+            cursor: pointer;
+            padding: 12px 0;
+            margin: 4px;
+            width: 14%;
+            font-weight: 600;
+            border: 2px solid white;
+
+        }
+
+        .button:hover {
+            background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+            border: 2px solid black;
+            color: black;
+
+
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .section-left {
+            flex-direction: row-reverse;
+        }
+
+        .paras {
+            padding: 60px 30px;
+        }
+
+        .thumbnail img {
+            height: 250px;
+            border: 5px solid white;
+            border-radius: 20px;
+            margin-top: 105px;
+        }
+
+        .contact {
+            height: 760px;
+        }
+
+        .text-contact {
+            text-align: center;
+            padding: 10px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .form {
+            max-width: 75%;
+            margin: 10px auto;
+        }
+
+        .form-input {
+            display: block;
+            padding: 5px 3px;
+            width: 75%;
+            margin: 20px auto;
+            font-size: 19px;
+            border: 2px solid black;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .sub-btn {
+            display: block;
+            margin: auto;
+            color: black;
+            font-weight: 500;
+            font-size: 21px;
+            border-radius: 10px;
+            padding: 4px 44px;
+            cursor: pointer;
+        }
+
+        .sub-btn:hover {
+            padding: 3px 30px 7px 30px;
+        }
+
+        .footer {
+            padding: 15px 0;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .burger {
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 15px;
+
+        }
+
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }
+
+        /* Responsive CSS */
+        @media only screen and (max-width:1150px) {
+            .navbar {
+                flex-direction: column;
+                height: 315px;
+                transition: all 0.3s ease-out;
+            }
+
+            .nav-list {
+                flex-direction: column;
+            }
+
+            .rightnav {
+                text-align: center;
+                padding: 0;
+            }
+
+            .nav-list li {
+                margin: 5px 2px;
+            }
+
+            #search {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+
+            .btn {
+                margin: 0;
+            }
+
+            .button {
+                width: auto;
+            }
+
+            .box-main {
+                flex-direction: column-reverse;
+                max-width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+
+            .text-big {
+                font-size: 2.3rem;
+                line-height: 3rem;
+            }
+
+            .firstSection {
+                height: auto;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .secondhalf img {
+                width: -webkit-fill-available;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .h-nav-resp {
+                height: 72px;
+            }
+
+            .v-class-resp {
+                display: none;
+            }
+
+            .logo_img {
+                margin: 0;
+            }
+
+            .logo {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                margin: 0;
+            }
+
+            .section {
+                max-width: 100%;
+                flex-direction: column-reverse;
+            }
+
+            .thumbnail img {
+                margin-top: 35px;
+            }
+
+            .paras {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap logo_img "></i>
+        </div>
+        <ul class="nav-list v-class-resp">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="search...">
+            <button class="btn">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstSection" id="Home">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big text-center">The Future of Education is Here</p>
+                <p class="text-small text-center">As the world we live in changes to embrace tech futures, how and what
+                    we teach in our education system will also be reshaped to keep up to date with the growing demands
+                    of the 21st century.In light of a shift towards a more personalised learner experience, teachers of
+                    the future must be prepared to be data collectors, as well as analysts, planners, collaborators,
+                    curriculum experts, synthesizers, problem-solvers and researchers. </p>
+                <div class="buttons text-center">
+                    <button class="button">Subscribe</button>
+                    <button class="button">Watch Videos</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="https://source.unsplash.com/900x900/?school,university" alt="Class Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big text-center">An investment in knowledge pays the best interest.</p>
+            <p class="sectionSubTag text-small text-center">If a man empties his purse into his head, no man can take it
+                from him. An investment in knowledge pays the best interest' —Benjamin Franklin.
+
+                This is a longer version of the usual quote “An investment in knowledge …” The author expresses a
+                straightforward saying, which means there will be a great outcome if you start focusing on nurturing
+                your intellectual being. You'll gain a better understanding of some matters, and this is not something
+                that anyone can take away from you.
+
+                This kind of investment is something that we tap without noticing. But add a little consciousness to it
+                and you'll see its essence. Experiences correlate with knowledge as these two are the foundation of
+                wisdom. It is not enough to just know something. You have to apply that knowledge. And by applying that
+                knowledge, you learn more from it.
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding,html" alt="Classe Room" height="250px">
+        </div>
+    </section>
+    <section class="section section-left">
+        <div class="paras">
+            <p class="sectionTag text-big text-center">Education is not preparation for life, education is life itself.
+            </p>
+            <p class="sectionSubTag text-small text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias optio dolorem deserunt accusantium dignissimos unde aut hic laboriosam! Sapiente voluptas
+                consectetur blanditiis hic adipisci exercitationem dolor delectus. Praesentium saepe officiis, dolores
+                atque corporis ex, iusto doloremque magnam sit impedit repudiandae voluptate tenetur libero obcaecati
+                soluta, distinctio sequi! Dolore voluptatibus impedit repellendus, eum corporis saepe temporibus
+                voluptates ipsa sed voluptate porro incidunt tempora aspernatur repellat, dolores sunt reprehenderit
+                dolorum ex! Odit fugit itaque a debitis ipsum atque molestiae temporibus est consequatur? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Molestiae, quia quam! Aspernatur dolorem itaque quaerat,
+                neque quae explicabo debitis id, saepe corporis consequuntur hic reiciendis quod minus adipisci in
+                dolores recusandae. Reprehenderit, aperiam laudantium quaerat eius ipsum deleniti accusantium expedita
+                nemo molestias eveniet neque hic eum porro distinctio ipsa.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?programming,study" alt="Classe Room" height="250px">
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big text-center">Education is the movement from darkness to light. </p>
+            <p class="sectionSubTag text-small text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias optio dolorem deserunt accusantium dignissimos unde aut hic laboriosam! Sapiente voluptas
+                consectetur blanditiis hic adipisci exercitationem dolor delectus. Praesentium saepe officiis, dolores
+                atque corporis ex, iusto doloremque magnam sit impedit repudiandae voluptate tenetur libero obcaecati
+                soluta, distinctio sequi! Dolore voluptatibus impedit repellendus, eum corporis saepe temporibus
+                voluptates ipsa sed voluptate porro incidunt tempora aspernatur repellat, dolores sunt reprehenderit
+                dolorum ex! Odit fugit itaque a debitis ipsum atque molestiae temporibus est consequatur? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Molestiae, quia quam! Aspernatur dolorem itaque quaerat,
+                neque quae explicabo debitis id, saepe corporis consequuntur hic reiciendis quod minus adipisci in
+                dolores recusandae. Reprehenderit, aperiam laudantium quaerat eius ipsum deleniti accusantium expedita
+                nemo molestias eveniet neque hic eum porro distinctio ipsa.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?javascript,computer" alt="Classe Room">
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1 class="text-contact">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="number" name="name" id="name" placeholder="Enter your phone">
+            <input class="form-input" type="email" name="name" id="name" placeholder="Enter your email">
+            <textarea name="concern" id="concern" cols="30" rows="6" class="form-input"
+                placeholder="Write your concern here.."></textarea>
+            <button class="sub-btn">Submit</button>
+        </div>
+    </section>
+
+    <footer class="footer background" id="Contact">
+        Copyright &copy; 2098 - All rights reserved.
+    </footer>
+
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navlist = document.querySelector('.nav-list')
+        rightnav = document.querySelector('.rightnav')
+
+        burger.addEventListener('click', () => {
+            rightnav.classList.toggle('v-class-resp')
+            navlist.classList.toggle('v-class-resp')
+            navbar.classList.toggle('h-nav-resp')
+        })
+    </script>
+</body>
+
+</html>

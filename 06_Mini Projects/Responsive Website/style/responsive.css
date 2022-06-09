@@ -1,0 +1,94 @@
+/* Responsive CSS */
+@media only screen and (max-width:1150px) {
+    .navbar {
+        flex-direction: column;
+        height: 315px;
+        transition: all 0.3s ease-out;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .rightnav {
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin: 5px 2px;
+    }
+
+    #search {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        margin: 0;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-big {
+        font-size: 2.3rem;
+        line-height: 3rem;
+    }
+
+    .firstSection {
+        height: auto;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .secondhalf img {
+        width: -webkit-fill-available;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .v-class-resp {
+        display: none;
+    }
+
+    .logo_img {
+        margin: 0;
+    }
+
+    .logo {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        margin: 0;
+    }
+
+    .section {
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .thumbnail img {
+        margin-top: 35px;
+    }
+
+    .paras {
+        padding: 25px;
+    }
+}

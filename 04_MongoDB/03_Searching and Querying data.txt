@@ -1,0 +1,48 @@
+SEARCHING AND QUERYING DATA
+
+Select Database First:
+    --> use ankit
+        This will switch the current database to ankit.
+        Inside this database has 'text' collection.
+
+SEARCHING:
+    --> db.text.find({name:"Redmi"})
+        This query will return all the object with name Redmi.
+
+SEARCHING WITH FILTERS:
+    --> db.text.find({rating: {$gte:3.5}})
+        This query return all the objects with the rating greater than equal to 3.5
+        Here: "$gte:" - means greater than equal
+    
+    --> db.text.find({rating: {$gt:3.5}})
+        This query return all the objects with the rating greater than 3.5
+        Here: "$gt:" - means greater than
+
+FILTERS WITH OPERATOR:
+  # And Operator
+    --> db.items.find({rating:{$gt:3.5},price:{$gt:4000}})
+        This query will return if both the condition is satisfied.
+        Here: "$gt:" - means greater than
+
+    --> db.items.find({rating:{$lt:3.5},price:{$gt:114000}})
+        This query will return if both the condition is satisfied.
+        Here: "$lt:" - means lesser than
+
+    --> NOTE: IN and operator no sign or and is used only comma is used between conditions.
+
+  # Or Operator
+    --> db.items.find({$or: [{rating:{$lt:3.5}}, {price:{$gt:114000}}] })
+        This query will return if any one of  the condition is satisfied.
+
+    --> NOTE: In or operator "$or:" is used before the filters to specifiy or operator.
+
+PROJECTION FILTER:
+    --> db.items.find({rating:{$gt:3.5}},{rating:1})
+        This will return only rating data which is greater than 3.5
+        because we specified second attribute "{rating:1}" it means we only 
+        want rating data from the collection.
+
+    --> db.items.find({rating:{$gt:3.5}},{rating:1, qty:1})
+        This will return rating and qty data in which rating is greater than 3.5
+
+

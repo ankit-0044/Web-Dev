@@ -1,0 +1,105 @@
+@media (min-width: 991px){
+	.container{
+		max-width: 1440px !important;
+	}
+	.footer-container .row{
+		padding: 28px 35px 46px 91px;
+	}
+	.profile-container{
+		width: 585px;
+		margin: 0 auto;
+	} 
+	.section2-menu .nav-item a.active{
+		border-bottom: 3px solid #2091F9 !important;
+	}
+	.section2-menu .nav-item .nav-link .mobile{
+		display: none;
+	}
+	.section2-menu .nav-item a.active{
+		color: #2091F9 !important;
+	}
+	.section3{
+		width: 785px;
+		margin: 0 auto;
+	}
+	.section3-content{
+		padding: 59px 18.5px 9px 21.5px;
+	}
+}
+@media (max-width: 640px){
+	.footer-container .foot-logo, .footer-container .social-icons, .footer-container .foot-text{
+		padding: 0;
+		text-align: center;
+	}
+	.footer-container .row{
+		width: 100%;
+		margin: 0;
+	}
+	.footer-container .foot-text{
+		justify-content: center !important;
+	}
+	.footer-container .social-icons{
+		margin-top: 51px;
+		margin-bottom: 50px;
+	}
+	.navbar button{
+		margin-right: 7.5px;
+	}
+	.navbar .navbar-profile{
+		margin-left: 7.5px;
+	}
+	.navbar-brand{
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	.navbar-brand img{
+		padding: 0 !important ;
+	}
+	.navbar .navbar-content{
+		padding: 17px 20px 17px 25px;
+	}
+}
+@media (max-width: 991px){
+	.profile-container{
+		padding: 63px 55px;
+	}
+	.section2-menu .nav-item .nav-link .desktop{
+		display: none;
+	}
+	.section2-menu .nav-item a.active{
+		background: #2091F9;
+		border: 1px solid #2091F9;
+		box-sizing: border-box;
+		color: #FFFFFF;
+	}
+	.section2-menu .nav-item a{
+		background: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		box-sizing: border-box;
+		padding: 30px 93px;
+	}
+	.section2{
+		margin-top: 10px;
+	}
+	.section2-menu .nav-item{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		padding-left: 22px;
+		padding-right: 21px;
+	}
+	.section2-menu{
+		padding: 61px 0px;
+	}
+	.full-name, .email-phone, .company-country, .full-address{
+		flex-direction: column;
+	}
+	.section3-content form div > div{
+		width: 100%;
+	}
+	.section3-content{
+		padding-left: 27px;
+		padding-right: 26px;
+	}
+}	
+

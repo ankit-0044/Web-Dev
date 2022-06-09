@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color:red;
+    margin: 10px;
+    text-align: center;
+}
+p{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    margin: 24px;
+    background-color: aqua;
+}
+li{
+    margin: 24px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+input, textarea{
+    display: block;
+    padding: 3px;
+    margin: 15px auto;
+    width: 60%;
+    outline: none;
+    border: 2px solid aqua;
+    border-radius: 5px;
+}
+.btn{
+    display: block;
+    margin: 4px auto;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: bisque;
+    font-weight: bold;
+    border: 2px solid aqua;
+    cursor: pointer;
+}

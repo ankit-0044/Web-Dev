@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Ubuntu, sans-serif, serif;
+}
+
+p, h3{
+	/*text-align: right;*/
+	/*text-align: left;*/
+	text-align: center;
+	/*text-align: justify;*/
+}
+
+h1{
+/*	margin: 200px;
+	width: 455px;*/
+	text-align: center;
+}
+
+.container{
+	background-color: rgb(253 192 192);
+	width: 900px;
+	border: 4px solid purple;
+	margin: 33px auto;
+}
+
+.item{
+	border: 3px solid grey;
+	margin: 12px 3px;
+	padding: 12px 3px;
+	background-color: rgb(227 215 190);
+}
+
+#fruits{
+	float: left;
+	width: 48%;
+}
+
+#computer{
+	float: left;
+	width: 48%;
+}
+
+#stationary{
+	/*float: left;*/
+	clear: both;  /*no left right overlap allowed*/
+	width: 99.25%;
+}

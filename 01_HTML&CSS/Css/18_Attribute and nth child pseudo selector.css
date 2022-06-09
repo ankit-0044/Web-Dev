@@ -1,0 +1,50 @@
+.container{
+	display: block;
+	width: 233px;
+	margin: auto;
+}
+input{
+	display: block;
+}
+
+/*Applying css using attribute selector*/
+input[type='text']{
+	padding: 23px;
+	border: 2px solid blue;
+}
+
+input[type='email']{
+	border: 2px solid black;
+	color: magenta;
+}
+
+a[target]{
+	font-size: 33px;
+	color: cadetblue;
+}
+a[target='_self']{
+	font-size: 33px;
+	color: palevioletred;
+}
+
+/*Applying css using child pseudo selector*/
+
+/*This will apply css for third item*/
+li:nth-child(3){
+	color: cyan;
+}
+
+/*This will apply css for every 2nd item*/
+li:nth-child(2n+0){
+	color: red;
+}
+
+/*odd item*/
+li:nth-child(odd){
+	background-color: darkviolet;
+}
+
+/*even item*/
+li:nth-child(even){
+	background-color: darkcyan;
+}

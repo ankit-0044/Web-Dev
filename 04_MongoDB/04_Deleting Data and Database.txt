@@ -1,0 +1,20 @@
+DELETING DATA AND DATABASE:
+
+Delete Database:
+    --> Select the database which we want to Delete using "use <database_name>" query.
+    --> "db.dropDatabase()" query is used to Delete current database
+
+Delete collection:
+    --> Select the database in which we want to Delete the collection using "use <database_name>" query.
+    --> "db.<collection_name>.drop()" query is used to delete the collection.
+        Example: db.text.drop()
+
+Delete Data From Collection:
+    --> db.text.deleteOne({price:12000})
+        This query will delete the maching document entry and will delete the first entry in case
+        of multiple document match.
+
+    --> db.text.deleteMany({price:12000})
+        This will delete all the matching document in a single way.
+
+NOTE: We can use all the conditions and operator during deletion like searching. 

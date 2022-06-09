@@ -1,0 +1,43 @@
+.container{
+	border: 2px solid firebrick;
+	background-color: rgb(223, 245, 201);
+	padding: 34px;
+	margin: 34px auto;
+	width: 500px;
+	
+}
+
+.btn{
+	background-color: #9bf1e5;
+	padding: 6px;
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	border-radius: 4px;
+}
+
+a{
+	text-decoration: none;
+	/*background-color: #b54921;*/
+}
+
+/*Pseudo selectors*/
+a:hover{
+	color: #b549e5;
+	/*background-color: #00f312;*/
+}
+
+a:visited{
+	background-color: #a1eb0e;
+}
+
+a:active{
+	background-color: #d012dd;
+}
+
+.btn:hover{
+	color: darkgoldenrod;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 4px;
+}

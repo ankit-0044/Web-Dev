@@ -1,0 +1,48 @@
+/*universal selector*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/*body selector*/
+body {
+	background-color: rgb(206 180 235 / 68%);
+}
+
+/*id selector*/
+.container{
+	background-color: rgb(161 170 191);
+	border: 3px solid rgb(177 33 33);
+
+	/*we can set padding for top, bottom, lef, right like this*/
+
+	/*padding: 34px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-left: 12px;*/
+
+	/*margin: 34px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-right: 12px;
+	margin-left: 12px;*/
+
+
+
+	/*padding/margin=top right bottom left;*/
+	/*padding: 12px 15px 18px 21px; */
+	
+	/*margin: 12px 15px 18px 21px; */
+
+	/*padding/margin: y(top/bottom) x(left/right)*/
+	padding: 34px 19px; 
+
+	margin: 34px 19px;
+	
+
+	border-radius: 25px;
+	width: 535px;
+
+}

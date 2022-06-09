@@ -1,0 +1,35 @@
+.container{
+	border: 2px solid blue;
+	background-color: #79e7d8;
+	height: 1200px;
+	position: relative;
+}
+
+.box{
+	display: inline-block;		/*block element shows the property of inline*/
+	border: 2px solid darkred;
+	width: 150px;
+	height: 150px;
+	margin: 2px;
+}
+
+/* Css position: static(default), absolute, relative, fixed, sicky*/
+.box3{
+	/*position: static;*/  /*Default position*/
+	
+	/*relative: relative to its normal postion and leave a gap*/
+	/*position: relative;*/
+
+	/*absolute:realtive to the position of its first parent*/
+	/*position: absolute;
+	top: 34px;
+	left: 30px;*/
+
+	/*fixed: position the element relative to the browser window;*/
+	/*position: fixed;
+	right: 4px;*/	
+
+	/*sticky: stick the element relative to the browser window;*/
+	position: sticky;
+	top: 4px;
+}

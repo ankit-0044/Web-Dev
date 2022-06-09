@@ -1,0 +1,35 @@
+NPM --> stands for Node Package Manager
+    --> it is a node tool used to install, uninstall or manage the third party packages.
+
+check version:
+    --> After installing nodejs successfully, write " npm --version " in terminal this will
+        print the installed version of npm.
+    --> This will also ensure that we have successfully installed node and npm.
+
+Initialize npm:
+    --> select the project folder where we want to initialize it.
+    --> open "terminal" and execute the command " npm init " this will create 
+        some file and dependencies folder in the selected folder.
+
+Installing and uninstalling packages using NPM:
+    INSTALLING:
+    --> In terminal write " npm install <packages_name> " and press ENTER
+        Example: npm install nodemon
+        This will install "nodemon" package in selected folder.
+    --> We can also write " npm i <packages_name> " to install the package no
+        need to write "install", 'i' will also work the same.
+
+    UNINSTALLING:
+    --> In terminal write " npm uninstall <packages_name> " and press ENTER
+        Example: npm uninstall nodemon
+        This will uninstall the "nodemon" package from select folder.
+    
+Installing package as "devdependencies":
+    --> devdependencies: this means we need package only when the project is in the development.
+    --> Write " npm i <packages_name> --save-dev " this will install the package as devdependency.
+    Example: npm install nodemon --save-dev
+
+Installing package as "global":
+    --> Write " npm i <packages_name> --global " this will install the package as a global.
+        Example: npm i nodemon --global
+        This means the any user can use the package in the same machine from anywhere.

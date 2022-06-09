@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+#box{
+	display: flex;
+	width: 200px;
+	height: 200px;
+	justify-content: center;
+	align-items: center;
+	background-color: cyan;
+
+/*	transition-property: background-color;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+	transition-delay: 2s;*/
+
+	/*Transition Shorthand*/
+	/*transition: background-color 1s ease-out 2s;*/
+
+	transition: all 2s ease-out 1s;
+
+
+}
+
+#box:hover{
+	background-color: lightgoldenrodyellow;
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	font-size: 30px;
+}

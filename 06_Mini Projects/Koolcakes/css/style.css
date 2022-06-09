@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*Common CSS*/
+
+.d-flex{
+	display: flex;
+}
+
+.d-in-block{
+	display: inline-block;
+
+}
+.text-allignment{
+	text-align: center;
+}
+.cake-name{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	color: #151515;
+}
+
+.cake-price{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	color: #151515;
+}
+.button-bg{
+	background: #6C264C;
+	border-radius: 100px;
+}
+
+/*Banner Section*/
+
+.banner-container{
+	padding-top: 171px;
+	padding-bottom: 62px;
+}
+
+.heading-text{
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 62px;
+	color: #000000;
+}
+.banner-section-small-images{
+	display: flex;
+	justify-content: space-between;
+	max-width: 510px;
+}
+.banner-section-small-images div{
+	max-width: 150px;
+}
+.banner-section-small-images div img{
+	width: 100%;
+}
+.banner-section-big-image{
+	max-width: 452px;
+	margin-left: 53px;
+}
+.banner-section-big-image img{
+	width: 100%;
+}
+.banner-section-bottom-logo div span{
+	font-size: 20px;
+}
+.banner-para-text{
+	font-size: 20px;
+	color: #777777;
+	margin-top: 35px;
+}
+.banner-heading-para-button{
+	max-width:627px;
+	margin-bottom: 60px;
+}
+.banner-order-button{
+	border-radius: 185px;
+	padding: 18px 36px;
+	margin-top: 32px;
+	max-width: 170px;
+}
+.banner-order-button a{
+	font-size: 18px;
+	line-height: 27px;
+	
+
+}
+.banner-section-bottom-logo{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-top: 100px;
+
+}
+
+.banner-bottom-logo a div{
+	border-radius: 50%;
+	padding: 10px;
+
+}
+.whatsapp-logo{
+	background: #25D366;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.messenger-logo{
+	background: #00B2FF;
+}
+
+/*Feature Section*/
+
+.feature-section{
+	padding-top: 58px;
+	padding-bottom: 97px;
+}
+
+.feature-section-boxes{
+	margin-top: 45px;
+
+}
+
+.bg-feature-img{
+	background: rgba(108, 38, 76, 0.05);
+	padding: 18px;
+	border-radius: 20px;
+	margin-bottom: 16px;
+}
+
+.feature-bdr{
+	border: 2px solid #E8E8E8;
+	border-radius: 20px;
+	padding: 54px 40px 16px 40px;
+}
+.contactless-dlvy{
+	margin: 0 27px;
+
+}
+
+/*Product Section*/
+
+.product-section{
+	padding: 80px 0;
+
+}
+.product-para-text{
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+}
+.product-section-img{
+	max-width: 1110px;
+	margin-bottom: 40px;
+}
+.product-img-box{
+	max-width: 350px;
+}
+.product-img{
+	width: 100%;
+
+}
+.product-center-img{
+	margin: 0 30px;
+
+}
+
+.button-view-more{
+	padding: 18px 28px;
+	max-width: 210px;
+	margin: 0 auto;
+
+
+}
+
+/*Classic/Designer/Customize Cakes Section*/
+
+.cake-section{
+	padding: 80px 0;
+}
+
+.view-more-button{
+	padding: 18px 34px 18px 35px;
+	max-width: 210px;
+	margin: 0 auto;
+}
+.cake-gallery{
+	margin: 30px 0 40px 0;
+
+}
+.cake-row-01{
+	margin-bottom: 30px;
+}
+.cake-gallery div div:nth-child(2){
+	margin: 0 30px;
+}
+.cake-row-01 div{
+	max-width: 350px;
+}
+.cake-row-02 div{
+	max-width: 350px;
+}
+.cake-gallery img{
+	width: 100%;
+
+}
+
+/*Order Section*/
+
+.order-section{
+	background-image: url("file:/home/ankit/Desktop/Project/WebDev/practise/assets/BG.png");
+	background-size: 100% 100%;
+	/*max-width: 1440px;
+	padding: 50px 125px 50px 688px;*/
+	display: flex;
+	justify-content: end;
+	padding: 50px 125px 50px 0;
+}
+.order-section div{
+	max-width: 627px;
+}
+.order-section div p:nth-child(1){
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 62px;
+	color: #000000;
+}
+.order-section div p:nth-child(2){
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: #777777;
+	margin: 24px 0 32px;
+	padding-right: 64px;
+
+}
+.order-section div div{
+	max-width: 170px;
+	padding: 18px 36px;
+
+}

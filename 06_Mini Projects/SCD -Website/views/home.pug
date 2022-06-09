@@ -1,0 +1,49 @@
+//- Template Inheritance
+
+//- Including Base Template
+extends base.pug
+
+block scripts
+    script(src="/static/index.js") 
+
+block style 
+    style 
+      include ../static/style.css 
+
+block content 
+    section#introsection 
+        div Welcome to Technology 
+        div.intropara2 Ready to Learn
+
+    section#missionSection  
+        h3 Our Mission
+        div.cardsection 
+          div.card 
+            h3 Technology that change the world!
+            div.card-box
+              div.card-img
+                img(src="/static/tech_world2.jpg", alt="Tech World")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
+          div.card 
+            h3 Work on Semiconductor
+            div.card-box
+              div.card-img
+                img(src="/static/semiconductor.png", alt="Tech World")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
+          div.card 
+            h3 Technology that help you
+            div.card-box
+              div.card-img
+                img(src="/static/tech_help.png", alt="Tech World")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
+
+    section#sponsorSection  
+        h3 Our Sponsor
+        div#sponsor
+          img(src="/static/Google.jpg", alt="sponsor image" Class='spImage')
+          img(src="/static/Amazon.jpg", alt="sponsor image" Class='spImage')
+          img(src="/static/meta.webp", alt="sponsor image" Class='spImage')
+          img(src="/static/images.png", alt="sponsor image" Class='spImage')

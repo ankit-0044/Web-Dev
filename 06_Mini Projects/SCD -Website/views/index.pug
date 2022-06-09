@@ -1,0 +1,65 @@
+//- Pug Template
+//- creating a website using pug 
+//- In pug template indentation is important for the HTML
+doctype html 
+html
+  head
+    title SCD - Semiconductor Development
+    link(rel="icon", type='image/x-icon', href="/static/Logo.png")
+    style 
+      include ../static/style.css 
+  body
+ <!-- Navbar Pug HTML-->
+    nav#navbar
+        ul 
+          div#logo
+            img(src="/static/Logo.png", alt="SCD")
+            | SDC
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Services]
+          li #[a(href="/") Contact Us]
+ <!-- Section Pug HTML-->
+    section#introsection 
+        div Welcome to Technology 
+        div.intropara2 Ready to Learn
+
+    section#missionSection  
+        h3 Our Mission
+        div.cardsection 
+          div.card 
+            h3 Technology that change the world!
+            div.card-box
+              div.card-img
+                img(src="/static/tech_world2.jpg", alt="Tech World")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
+          div.card 
+            h3 Work on Semiconductor
+            div.card-box
+              div.card-img
+                img(src="/static/semiconductor.png", alt="Tech World")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
+          div.card 
+            h3 Technology that help you
+            div.card-box
+              div.card-img
+                img(src="/static/tech_help.png", alt="Tech World")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor..
+
+    section#sponsorSection  
+        h3 Our Sponsor
+        div#sponsor
+          img(src="/static/Google.jpg", alt="sponsor image" Class='spImage')
+          img(src="/static/Amazon.jpg", alt="sponsor image" Class='spImage')
+          img(src="/static/meta.webp", alt="sponsor image" Class='spImage')
+          img(src="/static/images.png", alt="sponsor image" Class='spImage')
+
+    footer#footer 
+        | Copyright © 2022 Semiconductordevelopment.com | All right reserved
+
+    script 
+      include ../static/index.js 

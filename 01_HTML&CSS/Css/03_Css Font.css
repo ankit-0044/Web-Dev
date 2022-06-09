@@ -1,0 +1,10 @@
+/*Applying font on paragraph using Element selector*/
+p{
+	font-family:'BhuTuka Expanded One','Ubuntu','serif','sans-serif','Arial Narrow';
+	font-size: 33px;
+	line-height: 1.3em;
+}
+span{
+	font-weight: bolder;
+	font-style: italic;
+}

@@ -1,0 +1,90 @@
+.container{
+	height: 500px;
+	width: 100%;
+	border: 2px solid black;
+
+	/*Initialize the container as a flex box*/
+	display: flex;
+
+	/*Flex properties for flex container*/
+
+	/*default*/
+	/*flex-direction: row;  */
+	/*flex-direction: column;*/
+	/*flex-direction: row-reverse;*/
+	/*flex-direction: column-reverse;*/
+
+	/*default*/
+	/*flex-wrap: nowrap;*/
+	/*flex-wrap: wrap;*/
+	/*flex-wrap: wrap-reverse;
+
+	/*flex-flow: set both properties direction and wrap;*/
+	/*flex-flow: row-reverse wrap;*/
+
+	/*Manages spaces of the boxes*/
+	/*justify-content: center;*/
+	/*justify-content: space-between;*/
+	/*justify-content: space-evenly;*/
+	/*justify-content: space-around;*/
+
+	/*alignement of the flex boxex*/
+
+	/*Default*/
+	/*align-items: flex-start;*/
+	/*align-items: flex-end;*/
+	/*align-items: center;*/
+	/*align-items: stretch;*/
+
+
+}
+
+.item{
+	width: 200px;
+	height: 200px;
+
+	background-color: lightcyan;
+	border: 2px solid green;
+	margin: 10px;
+	padding: 4px;
+}
+
+#item-1{
+	/*Flex properties for the flex item*/
+
+	/*Higher the order, later it will shows up in the container*/
+	/*order: 2;*/
+
+	/*Higher the value of flex grow higher the flex box grow*/
+	/*flex-grow: 3;*/
+
+
+	/*Higher the value of flex shrink higher the flex box shrink*/
+	/*flex-shrink: 3;*/
+}
+
+#item-2{
+	/*order: 5;*/
+	/*flex-grow: 2;*/
+	/*flex-shrink: 4;*/
+
+	/*when flex-direction is set to row flex-basis will control width*/
+	/*when flex-direction is set to column flex-basis will control height*/
+	flex-basis: 270px;
+}
+
+#item-3{
+	/*order: 8;*/
+
+	/*flex shorthand manage grow, shrink, and basis*/
+	/*flex: 2 2 160px;*/
+}
+
+#item-4{
+	/*order: 3;*/
+
+	/*alignment of flex item*/
+	/*align-self: flex-end;*/
+	/*align-self: flex-start;*/
+	/*align-self: center;*/
+}

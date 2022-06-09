@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* body::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("./background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+} */
+
+body {
+    background: url("./background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+img {
+    width: 3%;
+    margin: 15px;
+}
+
+.container {
+    /* border: 2px solid cyan; */
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+.container h1 {
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 3px solid #62d037;
+    margin-bottom: 34px;
+}
+
+.box {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    margin: 32px 0px;
+    border-bottom: 2px solid #62d037;
+}
+
+.box input {
+    color: white;
+    width: 80%;
+    outline: none;
+    font-size: 22px;
+    background: none;
+    padding: 0px 18px;
+    border: none;
+}
+
+.box i {
+    /* width: 25px; */
+    margin-left: 10px;
+}
+
+.btn {
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+    width: 25%;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid #62d037;
+    background: none;
+}
+
+.btn:hover {
+    border: 2px solid white;
+    color: #62d037;
+    transition: 1.5s ease;
+    background-color: #303532;
+}
+
+/* Responsive CSS */
+@media only screen and (min-width: 300px) and (max-width: 680px) {
+    .container {
+        margin: 40px 15px;
+        position: unset;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        text-align: center;
+        width: unset;
+    }
+
+    .box input {
+        margin: 10px auto;
+    }
+}

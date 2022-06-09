@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	display: flex;
+}
+.card{
+	/*border: 2px solid cyan;*/
+	padding: 23px 12px;
+	margin: 23px 12px;
+	background-color: burlywood;
+
+	/*offset-x offset-y and color*/
+	/*box-shadow: 10px 13px cyan;*/
+
+	/*offset-x offset-y negative and color*/
+	/*box-shadow: -10px -13px cyan;*/
+
+	/*offset-x offset-y blur-radius and color*/
+	/*box-shadow: 10px 5px 10px cyan;*/
+
+	/*offset-x offset-y blur-radius spread-radius and color*/
+	/*box-shadow: 10px 5px 10px 10px cyan;*/
+
+	/*Set shadow inside the box*/
+	/*box-shadow: inset 3px 5px blue;*/
+
+	/*Set multiple shadow*/
+	box-shadow: 3px 5px red, 4px 7px cyan;
+}
+
+.card h2{
+	/*text-shadow:3px 4px cyan ;*/
+	text-shadow:3px 4px 10px cyan ;
+}

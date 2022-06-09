@@ -1,0 +1,25 @@
+//- Template Inheritance
+//-  This file work as base for template inheritance
+doctype html 
+html 
+  head 
+    title SCD - Semiconductor Development
+    
+    //- Title logo link
+    link(rel="icon", type='image/x-icon', href="/static/Logo.png")
+    block scripts
+    block style
+  body 
+    nav#navbar
+        ul 
+          div#logo
+            img(src="/static/Logo.png", alt="SCD")
+            | SCD 
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Services]
+          li #[a(href="/contact") Contact Us]
+    block content 
+    footer#footer 
+        | Copyright © 2022 Semiconductordevelopment.com | All right reserved

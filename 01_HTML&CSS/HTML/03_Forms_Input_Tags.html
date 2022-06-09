@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+<body>
+	<!-- Forms -->
+	<h2>This is HTML Form.</h2>
+	<form action="backend.php">
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" name="myname" id="name" >	
+		</div>
+		<br>
+
+		<div>
+			<label for="role">Role:</label>
+			<input type="" name="myrole" id="role">
+		</div>
+		<br>
+
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="myemail" id="email">
+		</div>
+		<br>
+
+		<div>
+			<label for="bonus">Bonus:</label>
+			<input type="number" name="mybonus" id="bonus">
+		</div>
+		<br>
+
+		<div>
+			<label for="date">Date:</label>
+			<input type="date" name="mydate" id="date">
+		</div>
+		<br>
+
+		<div>
+			<label for="eligible">Are you eligible ?</label>
+			<input type="checkbox" name="myeligibility" id="eligible">
+		</div>
+		<br>
+
+		<div>
+			<label for="gender">Gender:</label>
+			<span>Male</span><input type="radio" name="mygender" id="gender">
+			<span>Female</span><input type="radio" name="mygender" id="gender"> 
+			<span>Other</span><input type="radio" name="mygender" id="gender">
+		</div>
+		<br>
+
+		<div>
+			<label for="car">Car</label>
+			<select name="mycar" id="car">
+				<option value="Ind">Indica</option>
+				<option value="Swf" selected>Swift</option>
+			</select>
+		</div>
+		<br>
+		<label for="Write"> Write about yourself</label>
+		<div>
+			<textarea name="mytext" cols="60" rows="10" id="Write"></textarea>
+		</div>
+		<div>
+			<input type="submit" value="Submit Now">
+			<input type="reset" value="Reset Now">
+		</div>
+		
+	</form>
+</body>
+</html>

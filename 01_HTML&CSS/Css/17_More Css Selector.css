@@ -1,0 +1,28 @@
+h1{
+	background-color: cyan;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*if p is contained by any li which is contained by div*/
+/*div li p {
+	color: yellow;
+	background-color: greenyellow;
+	font-weight: bold;
+}*/
+
+/*apply css inside div on paragraph tag comes direclty after div*/
+/*div > p{
+	color: white;
+	background-color: blue;
+	font-weight: bold;
+}
+*/
+
+/*apply css on paragraph tag whose previous tag is div*/
+/*if p is right after div i.e p is the next sibling of div*/
+div + p{
+	background-color: cornflowerblue;
+	color: red;
+}

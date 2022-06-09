@@ -1,0 +1,13 @@
+UPDATING DATA IN THE DATABASE'S Collection
+
+--> Select the database in which we want to update using "use database_name"
+
+updateOne({})
+    --> db.<collection_name>.updateOne({<Filter>},{$set:{<updation_value>}})
+        Example: db.items.updateOne({name:"Moto 30s"},{$set:{price:2}})
+        This is will update the price to value '2' in the  matching document in the first occurence with name "Moto 30s"
+
+updateMany({})    
+    --> db.<collection_name>.updateMany({<Filter>},{$set:{<updation_value>}})
+        Example: db.items.updateMany({name:"Moto 30s"},{$set:{price:3,rating:1}})
+        This is will update the price to value '2' and rating to '1' in all the matching document with name "Moto 30s"

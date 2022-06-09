@@ -1,0 +1,21 @@
+/*Applying color using id selector*/
+
+/*color by name*/
+#para1{
+	color: cadetblue;
+}
+
+/*color by rgb function*/
+#para2{
+	color: rgb(100, 200, 100);
+}
+
+/*color by hex value */
+#para3{
+	color: #b788ba;
+}
+
+/*Applying color using element selector */
+span{
+	color: black;
+}
